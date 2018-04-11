@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<launch>
+    <node pkg="airlab_segment" type="euclidean_segmenter" name="euclidean_segmenter" output="screen">
+        <param name="world_tf_frame" value="world" />
+    </node>
+    <node pkg="dynamic_reconfigure" type="dynparam" args="load euclidean_segmenter $(find tork2018_violet_demo)/config/segment_params.yaml" name="load_segment_params" />
+    <node pkg="airlab_segment" type="segment_marker_publisher" name="segment_marker_publisher" />
+
+    <node pkg="violet" type="violet" name="violet" output="screen">
+        <rosparam subst_value="true" file="$(find tork2018_violet_demo)/config/violet_config.yaml"/>
+        <rosparam subst_value="true" file="$(find tork2018_violet_demo)/config/violet_definitions.yaml"/>
+    </node>
+    <node pkg="violet" type="violet_visualization_marker_publisher" name="violet_visualization_marker_publisher" />
+</launch>

@@ -1,0 +1,112 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  cluster_distance_threshold: 0.01
+  cluster_max_inliers: 10000
+  cluster_min_inliers: 650
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        dictitems:
+          Euclidean_Clustering: !!python/object/new:dynamic_reconfigure.encoding.Config
+            dictitems:
+              cluster_distance_threshold: 0.01
+              cluster_max_inliers: 10000
+              cluster_min_inliers: 650
+              groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              id: 3
+              name: Euclidean_Clustering
+              parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              parent: 0
+              state: true
+              type: ''
+            state: []
+          Multiplane_Segmentation: !!python/object/new:dynamic_reconfigure.encoding.Config
+            dictitems:
+              groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              id: 2
+              name: Multiplane_Segmentation
+              parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              parent: 0
+              plane_min_inliers: 20000
+              state: true
+              type: ''
+            state: []
+          Passthrough_Prefiltering: !!python/object/new:dynamic_reconfigure.encoding.Config
+            dictitems:
+              groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              id: 1
+              name: Passthrough_Prefiltering
+              parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              parent: 0
+              passthrough_max_depth: 1.2
+              passthrough_min_depth: 0.6
+              state: true
+              type: ''
+            state: []
+          Region_Growing_Segmentation: !!python/object/new:dynamic_reconfigure.encoding.Config
+            dictitems:
+              groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              id: 4
+              name: Region_Growing_Segmentation
+              parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              parent: 0
+              region_growing_distance_threshold: 0.002
+              region_growing_min_inliers: 5000
+              region_growing_point_color_threshold: 25
+              region_growing_region_color_threshold: 90
+              state: true
+              type: ''
+            state: []
+          Segment_Location_Postfiltering: !!python/object/new:dynamic_reconfigure.encoding.Config
+            dictitems:
+              groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              id: 5
+              name: Segment_Location_Postfiltering
+              parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+                state: []
+              parent: 0
+              post_filtering_max_point_x: 1.056246
+              post_filtering_max_point_y: 0.62735
+              post_filtering_max_point_z: 0.5
+              post_filtering_min_point_x: 0.349411
+              post_filtering_min_point_y: -0.928208
+              post_filtering_min_point_z: -0.151894
+              post_filtering_single_axis_intersection_allowance: 0.005
+              post_filtering_volume_intersection_threshold: 0.1
+              state: true
+              type: ''
+            state: []
+        state: []
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+    state: []
+  passthrough_max_depth: 1.2
+  passthrough_min_depth: 0.6
+  plane_min_inliers: 20000
+  post_filtering_max_point_x: 1.056246
+  post_filtering_max_point_y: 0.62735
+  post_filtering_max_point_z: 0.5
+  post_filtering_min_point_x: 0.349411
+  post_filtering_min_point_y: -0.928208
+  post_filtering_min_point_z: -0.151894
+  post_filtering_single_axis_intersection_allowance: 0.005
+  post_filtering_volume_intersection_threshold: 0.1
+  region_growing_distance_threshold: 0.002
+  region_growing_min_inliers: 5000
+  region_growing_point_color_threshold: 25
+  region_growing_region_color_threshold: 90
+state: []
