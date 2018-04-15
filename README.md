@@ -1,11 +1,22 @@
 # Violet Demo @ ToRK 2018 
 
+## Bağımlı Paketlerin Yüklenmesi
+
+```
+$ sudo apt-get install ros-<surum_adi>-openni2_camera
+$ sudo apt-get install ros-<surum_adi>-openni2_launch
+```
+
 ## ROS Workspace Kurulumu:
 
 ```
 $ mkdir -p ~/violet_demo/src
 $ cd ~/violet_demo
 $ catkin_make
+```
+
+Kullandığınız bütün terminallerde öncelikle aşağıdaki komutu çalıştırmanız gereklidir
+```
 $ source ~/violet_demo/devel/setup.bash
 ```
 
