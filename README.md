@@ -3,8 +3,8 @@
 ## Bağımlı Paketlerin Yüklenmesi
 
 ```
-$ sudo apt-get install ros-<surum_adi>-openni2_camera
-$ sudo apt-get install ros-<surum_adi>-openni2_launch
+$ sudo apt-get install ros-<surum_adi>-openni2-camera
+$ sudo apt-get install ros-<surum_adi>-openni2-launch
 ```
 
 ## ROS Workspace Kurulumu:
